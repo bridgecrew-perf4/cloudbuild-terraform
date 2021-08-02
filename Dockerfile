@@ -3,7 +3,7 @@ FROM google/cloud-sdk:slim
 LABEL maintainer="engineering@compensate.com"
 
 RUN  apt-get -y install unzip && \
-    curl -o terraform.zip https://releases.hashicorp.com/terraform/0.15.5/terraform_0.15.5_linux_amd64.zip && \
+    curl -o terraform.zip https://releases.hashicorp.com/terraform/1.0.3/terraform_1.0.3_linux_amd64.zip && \
     unzip terraform.zip && \
     chmod +x terraform && \
     mv terraform /usr/local/bin && \
