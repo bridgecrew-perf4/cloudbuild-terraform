@@ -2,7 +2,7 @@ FROM google/cloud-sdk:alpine
 LABEL maintainer="engineering@compensate.com"
 
 RUN apk --no-cache add curl unzip && \
-    curl -o terraform.zip https://releases.hashicorp.com/terraform/1.0.7/terraform_1.0.7_linux_amd64.zip && \
+    curl -o terraform.zip https://releases.hashicorp.com/terraform/1.1.0/terraform_1.1.0_linux_amd64.zip && \
     unzip terraform.zip && \
     chmod +x terraform && \
     mv terraform /usr/local/bin && \
