@@ -17,8 +17,8 @@ Upon editing the Dockerfile, build and tag the image for the repository that
 will host it, remember to make a `latest` tag as well:
 
 ```sh
-$ docker build -t eu.gcr.io/compensate-infrastructure/cloudbuild-terraform:X.Y.Z
--t eu.gcr.io/compensate-infrastructure/cloudbuild-terraform:latest
+$ docker build -t eu.gcr.io/compensate-infrastructure/cloudbuild-terraform:X.Y.Z \n
+-t eu.gcr.io/compensate-infrastructure/cloudbuild-terraform:latest .
 ```
 
 Finally push all the new tags
